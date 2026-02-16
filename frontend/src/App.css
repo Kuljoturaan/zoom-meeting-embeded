@@ -1,0 +1,15 @@
+/* जब मीटिंग शुरू न हो तब इसे छुपा कर रखें */
+#zmmtg-root {
+  display: none; 
+}
+
+/* मीटिंग शुरू होने पर ज़ूम पूरी स्क्रीन ले लेगा */
+body.main-body #zmmtg-root {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
