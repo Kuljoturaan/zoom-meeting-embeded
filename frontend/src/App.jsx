@@ -16,7 +16,7 @@ function App() {
 
     
 
-    const { data } = await axios.post("http://localhost:5000/auth", {
+    const { data } = await axios.post("https://zoom-meeting-embeded-1.onrender.com/auth", {
       meetingNumber,
       role: 1,
     });

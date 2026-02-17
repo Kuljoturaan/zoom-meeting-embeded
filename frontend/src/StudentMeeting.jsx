@@ -10,10 +10,13 @@ const StudentMeeting = () => {
     const sdkKey = import.meta.env.VITE_ZOOM_SDK_KEY;
     const emailId = import.meta.env.VITE_ZOOM_ADMIN_EMAILID;
 
-    const { data } = await axios.post("http://localhost:5000/auth", {
-      meetingNumber,
-      role: 0,
-    });
+    const { data } = await axios.post(
+      "https://zoom-meeting-embeded-1.onrender.com/auth",
+      {
+        meetingNumber,
+        role: 0,
+      },
+    );
 
     ZoomMtg.init({
       leaveUrl: window.location.origin,
