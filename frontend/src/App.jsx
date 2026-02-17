@@ -34,7 +34,7 @@ function App() {
           userName: "Kuljot",
           userEmail: emailId,
           zak: zakToken,
-          success: (res) => console.log("Joined as Host!"),
+          success: (res) => console.log("Joined as Host!",res),
           error: (err) => console.log(err),
         });
       },
