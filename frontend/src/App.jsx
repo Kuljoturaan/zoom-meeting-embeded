@@ -9,8 +9,8 @@ ZoomMtg.prepareWebSDK();
 function App() {
   const [manualZak, setManualZak] = useState("");
   const startMeeting = async () => {
-    const meetingNumber = import.meta.env.VITE_ZOOM_MEETING_NUMBER;
-    const passWord = import.meta.env.VITE_ZOOM_MEETING_PASSWORD;
+    const meetingNumber = "86874801127";
+    const passWord = "Vu7rjx";
     const sdkKey = import.meta.env.VITE_ZOOM_SDK_KEY;
     // const zakToken = import.meta.env.VITE_ZOOM_ZAK_TOKEN;
     const emailId = import.meta.env.VITE_ZOOM_ADMIN_EMAILID;
@@ -59,7 +59,9 @@ function App() {
           onChange={(e) => setManualZak(e.target.value)}
         />
         <br />
-        <button className="meeting-start-btn" onClick={startMeeting}>Join as Admin (Host)</button>
+        <button className="meeting-start-btn" onClick={startMeeting}>
+          Join as Admin (Host)
+        </button>
       </div>
     </div>
   );
